@@ -1,3 +1,5 @@
+/******/ (function() { // webpackBootstrap
+var __webpack_exports__ = {};
 /**
  * ВНИМАНИЕ! Зависимости Реакта в этом модуле пока не работают.
  * Вероятно, нужно дополнить конфиг Вебпака соответствующими
@@ -13,3 +15,6 @@ alert("Alert from React.js!");
 //   React.createElement("h1", null, "Hello world from React.js!"),
 //   document.getElementById("root")
 // );
+
+/******/ })()
+;
