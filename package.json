@@ -13,8 +13,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "serve": "serve \"./dist\" -s",
-    "build": "webpack",
+    "serve": "serve \"./build\" -s",
+    "build": "webpack --config=./scripts/webpack/webpack.config.js",
     "pretty": "yarn prettier --write ."
   },
   "eslintConfig": {
@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
+    "app-root-path": "^3.0.0",
+    "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
