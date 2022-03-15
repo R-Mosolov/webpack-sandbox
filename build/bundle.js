@@ -630,7 +630,7 @@
   // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
   !(function () {
     __webpack_require__.r(__webpack_exports__);
-    /* harmony import */ var style_loader_css_loader_styles_theme_css__WEBPACK_IMPORTED_MODULE_0__ =
+    /* harmony import */ var _styles_theme_css__WEBPACK_IMPORTED_MODULE_0__ =
       __webpack_require__(1);
     /**
      * ВНИМАНИЕ! Зависимости Реакта в этом модуле пока не работают.

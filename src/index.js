@@ -6,7 +6,7 @@
 
 // import React from "react";
 // import ReactDOM from "react-dom";
-import "style-loader!css-loader!./styles/theme.css";
+import "./styles/theme.css";
 
 alert("Alert from React.js!");
 
