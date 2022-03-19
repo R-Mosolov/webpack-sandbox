@@ -420,6 +420,7 @@
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
 */
+
       module.exports = function (cssWithMappingToString) {
         var list = []; // return the list of modules as css string
 
@@ -637,15 +638,11 @@
      * Вероятно, нужно дополнить конфиг Вебпака соответствующими
      * расширениями модулей (JS, JSX).
      */
-
     // import React from "react";
     // import ReactDOM from "react-dom";
 
-    const greeting = "Alert from React.js!";
-
-    alert(greeting);
-
-    // ReactDOM.render(
+    var greeting = "Alert from React.js!";
+    alert(greeting); // ReactDOM.render(
     //   React.createElement("h1", null, "Hello world from React.js!"),
     //   document.getElementById("root")
     // );
