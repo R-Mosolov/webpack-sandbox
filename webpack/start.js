@@ -14,13 +14,13 @@ const DevServer = require("webpack-dev-server");
 const chalk = require("chalk");
 
 // Config
-const getConfig = require("./webpack.config");
+const getDevConfig = require("./configs/webpack.dev");
 
 // Constants
 const { HOST, PORT } = require("./constants");
 
 // Webpack Compiler
-const compiler = webpack(getConfig());
+const compiler = webpack(getDevConfig());
 
 const server = new DevServer(compiler, {
   host: HOST,

@@ -8,7 +8,9 @@
 // import ReactDOM from "react-dom";
 import "./styles/theme.css";
 
-alert("Alert from React.js!");
+const greeting = "Alert from React.js!";
+
+alert(greeting);
 
 // ReactDOM.render(
 //   React.createElement("h1", null, "Hello world from React.js!"),

@@ -11,10 +11,10 @@ const webpack = require("webpack");
 const chalk = require("chalk");
 
 // Конфигурация
-const getConfig = require("./webpack.config");
+const getProdConfig = require("./configs/webpack.prod");
 
 // Компайлер Вебпака
-const compiler = webpack(getConfig());
+const compiler = webpack(getProdConfig());
 
 // Логгирование промежуточных стадий компиляции
 compiler.hooks.beforeRun.tap({ name: "start" }, () => {
