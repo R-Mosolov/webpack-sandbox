@@ -1,3 +1,4 @@
+const { DefinePlugin } = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const { SOURCE_DIRECTORY, BUILD_DIRECTORY } = require("../constants");
@@ -9,8 +10,10 @@ const { SOURCE_DIRECTORY, BUILD_DIRECTORY } = require("../constants");
  * Promise
  */
 
-module.exports = () => {
+module.exports = (env, argv) => {
   // Здесь можно дебажить, доставая разные значения из консоли
+
+  const isProd = argv?.mode === "production";
 
   return {
     mode: "none", // Устанавливает режим сборки. None удаляет все оптимизации
@@ -40,6 +43,13 @@ module.exports = () => {
       // Каждый плагин – это конструктор
       new HtmlWebpackPlugin({
         template: "./public/index.html",
+      }),
+      new DefinePlugin({
+        "process.env": {
+          NODE_ENV: isProd
+            ? JSON.stringify("production")
+            : JSON.stringify("development"),
+        },
       }),
     ],
   };
