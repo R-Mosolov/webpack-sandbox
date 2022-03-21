@@ -31506,6 +31506,18 @@ object-assign
           react__WEBPACK_IMPORTED_MODULE_0__.Fragment,
           null,
           /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+            "p",
+            null,
+            "Value from Webpack's env:",
+            "https://dev.example.com"
+          ),
+          /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+            "p",
+            null,
+            "Mode:",
+            "development"
+          ),
+          /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(
             "h1",
             null,
             "Current number:"

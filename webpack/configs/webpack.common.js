@@ -49,6 +49,7 @@ module.exports = (env, argv) => {
           NODE_ENV: isProd
             ? JSON.stringify("production")
             : JSON.stringify("development"),
+          SERVICE_URL: JSON.stringify("https://dev.example.com"),
         },
       }),
     ],

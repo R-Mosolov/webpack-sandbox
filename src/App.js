@@ -6,10 +6,14 @@ const App = () => {
   return (
     <>
       {/* ЗАДАЧА: Научиться подтягивать переменную окружения из Вебпака */}
-      {/* <span>
+      <p>
         Value from Webpack's env:
-        {process.env.CUSTOM}
-      </span> */}
+        {process.env.SERVICE_URL}
+      </p>
+      <p>
+        Mode:
+        {process.env.NODE_ENV}
+      </p>
 
       <h1>Current number:</h1>
       <p>{count}</p>
